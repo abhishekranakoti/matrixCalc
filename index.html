@@ -1,76 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <!-- general settings -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="Matrix Calculator, Matrix, Calculator, Row Operations, Row Reduction">
 
-<head>
-   <!-- general settings -->
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="keywords" content="Matrix Calculator, Matrix, Calculator, Row Operations, Row Reduction">
+      <!-- meta content -->
+      <title>Matrix Operations Calculator</title>
+      <link rel="icon" href="data:;base64,=">
 
-   <!-- meta content -->
-   <title>Matrix Operations Calculator</title>
-   <link rel="icon" href="data:;base64,=">
+      <!-- styles -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./styles/styles.css">
+      <link rel="stylesheet" href="./styles/index.css">
+      <style>
+         body {
+            background-color: #333;
+         }
+         nav {
+            background-color: #444;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+         }
+         .link {
+            color: #fff;
+            margin-right: 20px;
+            font-size: 20px;
+            text-decoration: none;
+         }
+         #about-us-tab,
+         #contact-us-tab {
+            margin-right: 20px;
+         }
+         main {
+            color: #fff;
+            padding: 40px;
+         }
+         #title h1 {
+            font-size: 50px;
+         }
+         #title h3 {
+            font-size: 25px;
+            margin-top: 10px;
+         }
+         #calculators {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+         }
+         .link-section {
+            width: 45%;
+         }
+         #credits {
+            margin-top: 60px;
+         }
+         #credits p {
+            margin-bottom: 0;
+         }
+         footer {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+         }
+      </style>
+   </head>
 
-   <!-- styles -->
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="./styles/styles.css">
-   <link rel="stylesheet" href="./styles/index.css">
-</head>
+   <body>
+      <nav>
+         <a href="" id="site-icon-link">
+            <img src="./assets/matrix-operations.jpg" alt="Virtual Labs " id="site-icon">
+         </a>
+         <a class="link" href="./html/row-op-input.html">Row Operations Calculator</a>
+         <a class="link" href="./html/matrix-op.html">Matrix Operations Calculator</a>
+         <a class="link" id="about-us-tab" href="#">About Us</a>
+         <a class="link" id="contact-us-tab" href="#">Contact Us</a>
+      </nav>
 
-<body>
-   <nav>
-      <a href="" id="site-icon-link">
-         <img src="./assets/iitd_logo.png" alt="Matrix Operations" id="site-icon">
-      </a>
-      <a class="link" href="./html/row-op-input.html">Row Operations Calculator</a>
-      <a class="link" href="./html/matrix-op.html">Matrix Operations Calculator</a>
-   </nav>
-
-   <main>
-      <div id="title">
-         <h1>Matrix Operations</h1>
-         <h3>A Step-by-Step Matrix Calculator</h3>
-      </div>
-
-      <div id="calculators">
-         <div class="link-section">
-            <a href="./html/row-op-input.html">Row Operations Calculator</a>
-            <p>
-               Individual row operation as well as row step-by-step row echelon and reduced echelon forms.
-            </p>
+      <main>
+         <div id="title">
+            <h1>Matrix Operations</h1>
+            <h3>A Step-by-Step Matrix Calculator</h3>
          </div>
 
-         <div class="link-section">
-            <a href="./html/matrix-op.html">Matrix Operations Calculator</a>
-            <p>
-               Matrix multiplication, addition, transpose, and inverses.
-               Step-by-step solutions and more coming soon.
-            </p>
-         </div>
+         <div id="calculators">
+            <div class="link-section">
+               <a href="./html/row-op-input.html">Row Operations Calculator</a>
+               <p>
+                  Individual row operation as well as row step-by-step row echelon and reduced echelon forms.
+               </p>
+            </div>
 
-         <div id="credits" class="link-section">
-            <p>
-               Built by
-               <a target="_blank" href="https://matthewdulworth.com/">Matthew Dulworth</a>.
-               You can view the source code on
-               <a target="_blank" href="https://github.com/MatthewDulworth/matrix-operations/">GitHub</a>.
-               To report any bugs you can
-               <a target="_blank" href="https://github.com/MatthewDulworth/matrix-operations/issues">
-                  open a GitHub issue</a> or
-               <a target="_blank" href="mailto:mhdulworth@utexas.edu?subject=Matrix Opertions Bug Report">send the
-                  developer an email</a>.
-            </p>
-         </div>
-      </div>
-   </main>
+            <div class="link-section">
+               <a href="./html/matrix-op.html">Matrix Operations Calculator</a>
+               <p>
+                  Matrix multiplication, addition, transpose, and inverses.
+                  Step-by-step solutions and more coming soon.
+               </p>
+            </div>
 
-   <footer>
-      <div>
-         Copyright &copy; 2020
-         <a target="_blank" href="https://github.com/MatthewDulworth/matrix-operations/">Matthew Dulworth</a>.
-         All rights Reserved.
-      </div>
-   </footer>
-</body>
-
-</html>
+            <div id="credits" class="link-section">
