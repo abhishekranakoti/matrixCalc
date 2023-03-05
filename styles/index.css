@@ -23,8 +23,10 @@ main {
 
 .link-section p {
    margin: 5px 0px;
+   color: red;
 }
 
 #credits {
    margin-bottom: 20%;
+   color: red;
 }
