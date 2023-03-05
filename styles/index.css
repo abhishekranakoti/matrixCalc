@@ -1,0 +1,30 @@
+body {
+   align-items: center;
+}
+
+#title {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 75px;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   max-width: 500px;
+}
+
+.link-section {
+   margin-bottom: 30px;
+   border-bottom: 1px solid black;
+}
+
+.link-section p {
+   margin: 5px 0px;
+}
+
+#credits {
+   margin-bottom: 20%;
+}

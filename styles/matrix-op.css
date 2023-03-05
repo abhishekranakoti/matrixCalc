@@ -1,0 +1,64 @@
+/********* matrix input *********/
+
+#input {
+   display: flex;
+}
+
+.matrix-input {
+   padding-right: 1.5rem;
+}
+
+/********* operations *********/
+
+#scale input[type='text'] {
+   text-align: right;
+   width: 42.5px;
+   padding-right: 2px;
+}
+
+.op-symbol {
+   display: inline-block;
+   width: 1rem;
+   text-align: center;
+}
+
+#scale .op-symbol, #multiply .op-symbol {
+   font-size: 0.8rem;
+}
+
+#operations {
+   display: flex;
+}
+
+#operations>div {
+   margin-right: 1.5rem;
+}
+
+/********* display matrix *********/
+
+#display {
+   padding: 0.75rem 1.5rem;
+}
+
+.results-display {
+   display: flex;
+   align-items: center;
+   margin: 0.75rem 0;
+}
+
+.results-display>div {
+   margin-right: 10px;
+}
+
+.display-matrix {
+   color: inherit;
+   display: inline-grid;
+   padding: 4px 6px;
+   column-gap: 12px;
+   border: 1px solid black;
+}
+
+.display-matrix div {
+   text-align: center;
+   min-width: 1rem;
+}
