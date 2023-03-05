@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- general settings -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- meta content -->
+   <title>Matrix Operations Calculator</title>
+
+   <!-- suppress favicon 404 -->
+   <link rel="icon" href="data:;base64,=">
+
+   <!-- styles -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../styles/styles.css">
+   <link rel="stylesheet" href="../styles/row-op.css">
+
+   <!-- scripts -->
+   <script src="../scripts/fraction.js" defer></script>
+   <script src="../scripts/steplist.js" defer></script>
+   <script src="../scripts/matrix.js" defer></script>
+   <script src="../scripts/row-op.js" defer></script>
+</head>
+
+<body>
+   <!-- nav bar -->
+   <nav>
+      <a href="../index.html" id="site-icon-link">
+         <img src="../assets/matrix-operations.jpg" alt="Matrix Operations" id="site-icon">
+      </a>
+      <a class="link" href="./row-op-input.html">Row Operations Calculator</a>
+      <a class="link" href="./matrix-op.html">Matrix Operations Calculator</a>
+   </nav>
+
+   <!-- main content -->
+   <main>
+      <section id="display">
+         <div class="matrix-pair"></div>
+      </section>
+
+      <section id="undo-redo">
+         <button id="undo">Undo</button>
+         <button id="redo">Redo</button>
+         <button id="edit">Edit Last Result</button>
+      </section>
+
+      <section id="operations-menu">
+
+         <div id="row-multiply">
+            Multiply row <select class="row-list"></select> by <input type="text"> <button>Go</button>
+         </div>
+
+         <div id="row-replace">
+            Add <input type="text"> times row <select class="row-list">
+            </select> to row <select class="row-list"></select> <button>Go</button>
+         </div>
+
+         <div id="row-swap">
+            Swap row <select class="row-list"></select> with <select class="row-list"></select> <button>Go</button>
+         </div>
+
+         <div id="reduction">
+            <button id="row-echelon">Row Echelon Form</button>
+            <button id="row-reduce">Reduced Row Echelon Form</button>
+         </div>
+      </section>
+   </main>
+
+   <!-- copyright notice -->
+   <footer>
+      <div>
+         Copyright &copy; 2020 
+         <a target="_blank" href="https://matthewdulworth.com/">Matthew Dulworth.</a>
+         All rights Reserved.
+      </div>
+   </footer>
+</body>
+
+</html>
